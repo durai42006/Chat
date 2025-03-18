@@ -1,0 +1,157 @@
+.weekly-contest-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Contest Title */
+.contest-title {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.icon-trophy {
+  color: #ffcc00;
+}
+
+/* Question Card */
+.question-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Comment Section */
+.comment-section {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.comment-section h4 {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.comment-section h4 svg {
+  margin-right: 5px;
+}
+
+/* Scrollable Comments */
+.scrollable-comments {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+/* Custom Scrollbar */
+.scrollable-comments::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollable-comments::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+.scrollable-comments::-webkit-scrollbar-thumb {
+  background: #007bff;
+  border-radius: 5px;
+}
+
+.scrollable-comments::-webkit-scrollbar-thumb:hover {
+  background: #0056b3;
+}
+
+/* Comment Styles */
+.comment {
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.comment .user-icon {
+  color: #007bff;
+}
+
+/* Reply Button */
+.reply-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.reply-button:hover {
+  text-decoration: underline;
+}
+
+/* Nested Comments */
+.nested-comments {
+  margin-left: 20px;
+  margin-top: 5px;
+  padding-left: 10px;
+  border-left: 2px solid #ddd;
+}
+
+/* Comment Input */
+.comment-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+.comment-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.comment-input button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comment-input button:hover {
+  background: #218838;
+}
+
+/* Show More / Show Less Button */
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.toggle-btn:hover {
+  text-decoration: underline;
+}

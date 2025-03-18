@@ -1,0 +1,81 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c3e50;
+  padding: 10px 20px;
+  height: 50px;
+}
+
+/* Left Side Logo */
+.navbar-left .navbar-logo {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+}
+
+/* Right Side Links */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Add spacing between navbar items */
+}
+
+/* Navbar Links */
+.navbar-link {
+  color: white;
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #4ca1af;
+}
+
+/* User Info */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* User Avatar */
+.user-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: transform 0.3s ease;
+}
+
+.user-avatar:hover {
+  transform: scale(1.1);
+}
+
+/* Username */
+.username {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Logout Button */
+.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
