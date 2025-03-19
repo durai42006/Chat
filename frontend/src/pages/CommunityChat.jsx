@@ -38,7 +38,7 @@ const CommunityChat = () => {
     }, [socket, user]);
 
     const sendMessage = async () => {
-        if (message.trim() && user?.name) {  // ✅ Changed from user.username to user.name
+        if (message.trim() && user?.name) {
             const newMessage = { username: user.name, message };
 
             // Emit message through Socket.IO
@@ -60,15 +60,18 @@ const CommunityChat = () => {
         }
     };
 
-    if (loading) return <p>Loading chat...</p>; // Wait until user data loads
+    if (loading) return <p>Loading chat...</p>;
 
     return (
         <div className="chat-container">
-            <h2>Community Chat</h2>
+            <h2 className="chat-title">Community Chat</h2>
             <div className="chat-box">
                 {messages.map((msg, index) => (
-                    <div key={index} className={`chat-message ${msg.username === user?.name ? "self" : ""}`}>
-                        <strong>{msg.username}</strong>: {msg.message}
+                    <div key={index} className={`chat-message ${msg.username === user?.name ? "self" : "other"}`}>
+                        <div className="message-bubble">
+                            <strong>{msg.username}</strong>
+                            <p>{msg.message}</p>
+                        </div>
                     </div>
                 ))}
             </div>

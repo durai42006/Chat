@@ -3,7 +3,9 @@ import { UserContext } from "../../context/userContext";
 import WeeklyContest from "../pages/WeeklyContest"; // ✅ Import Weekly Contest
 import "../css/Dashboard.css"; // ✅ Import CSS file
 import CommunityChat from "./CommunityChat";
+import { useNavigate } from "react-router-dom";
 function Dashboard() {
+  const navigate = useNavigate();
   const { user } = useContext(UserContext);
   console.log("User Context Data:", user);
   if (user) {
@@ -48,6 +50,10 @@ function Dashboard() {
     setExpandedTopic(expandedTopic === index ? null : index);
   };
 
+  const gotoCommunity = ()=>{
+    navigate("/community");
+  }
+
   return (
     <div className="dashboard-container">
       <h1 className="dashboard-title">Welcome to AptEx</h1>
@@ -75,7 +81,8 @@ function Dashboard() {
         </div>
       )}
 
-  <CommunityChat />
+<button onClick={() => gotoCommunity()}>Community</button>
+
 
     </div>
   );
